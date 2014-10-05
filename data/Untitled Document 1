@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+require 'yaml'
+
+#file=File.read('survey.yml')
+#file2=file.gsub("---","").split("\n-")
+#file2.each do |line|
+#	puts line
+#end
+
+
+stu_info = YAML.load(File.read("survey.yml"))
+puts stu_info.to_s
+ 
+
